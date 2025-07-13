@@ -1,0 +1,154 @@
+@import 'tipografia';
+@import 'style';
+
+// --- Seção de Apresentação do Professor ---
+
+.apresentacao-professor {
+    background: #1e293b;
+    color: #fdfdfd;
+    padding: 4rem 1.5rem;
+}
+
+.apresentacao-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 2rem;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.apresentacao-texto {
+    max-width: 600px;
+}
+
+.apresentacao-titulo {
+    @include tamanho-fonte('gigante');
+    @include apply-font($font-primary, 700);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #FFF;
+
+    .gradient-text {
+        font-weight: 900;
+    }
+}
+
+.apresentacao-descricao {
+    @include tamanho-fonte('medio');
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.apresentacao-social {
+    display: flex;
+    gap: 1rem;
+
+    @media (max-width: 992px) {
+        justify-content: center;
+    }
+
+    a img {
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.apresentacao-imagem {
+    .professor-foto {
+        border-radius: 100%;
+        max-width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border: 5px solid #4f46e5;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 768px) {
+            max-width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+
+// --- Seção de Detalhes do Professor ---
+
+.detalhes-professor {
+    padding: 5rem 1.5rem;
+    background-color: $primary-bg;
+}
+
+.detalhes-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.biografia h2,
+.credenciais h3 {
+    @include apply-font($font-primary, 700);
+    @include tamanho-fonte('grande');
+    color: $text-color;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #4f46e5;
+    padding-left: 1rem;
+}
+
+.biografia p {
+    @include tamanho-fonte('medio');
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.credenciais ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.credenciais li {
+    @include tamanho-fonte('medio');
+    @include apply-font($font-secondary);
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    line-height: 1.6;
+
+    &:first-child {
+        border-top: 1px solid #e5e7eb;
+    }
+}
+
+.destaque-lista {
+    font-weight: 600;
+    color: #4f46e5;
+    margin-right: 0.5rem;
+}
+
+// --- Ajustes Responsivos Adicionais ---
+@media screen and (max-width: 320px) {
+    .apresentacao-titulo {
+        font-size: 1.8rem;
+    }
+
+    .apresentacao-imagem .professor-foto {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .detalhes-container {
+        gap: 3rem;
+    }
+
+    .biografia h2, .credenciais h3 {
+        font-size: 1.5rem;
+    }
+}

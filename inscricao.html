@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Front Devs</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/inscricao.css"> 
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-conteiner">
+            <a href="index.html" class="logo"><img src="assets/img/Logo.png" alt="Logo" class="logo-curso invert "></a>
+        
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">O Curso</a>
+                <a href="modulos.html" class="nav-link">Módulos</a>
+                <a href="professor.html" class="nav-link">Professor</a>
+            </nav>
+
+            <a href="inscricao.html" class="cta-button">Inscreva-se</a>
+        </div>
+    </header>
+
+    <main class="inscricao-main">
+        <div class="inscricao-container">
+
+            <div class="inscricao-video-wrapper">
+                <h1 class="inscricao-titulo">Só falta um passo para mudar sua carreira.</h1>
+                <p class="inscricao-subtitulo">Assista ao vídeo abaixo e veja um pouco do que preparamos para você.</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=9FvStlbOJGgo0OrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="inscricao-form-wrapper">
+                <form class="form-card">
+                    <h2 class="form-titulo">Crie sua Conta</h2>
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Crie uma senha forte" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmar-senha">Confirme sua Senha</label>
+                        <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme sua senha" required>
+                    </div>
+                    
+                    <button type="submit" class="form-botao">
+                        Finalizar Inscrição
+                    </button>
+
+                    <p class="form-login-link">
+                        Já tem uma conta? <a href="#">Faça login</a>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-grid">
+                <div class="rodape-column">
+                    <h3>&lt;/&gt; Front Dev</h3>
+                    <p>Formando a próxima geração de desenvolvedores front-end.</p>
+                </div>
+                <div class="rodape-column">
+                    <h4>Navegação</h4>
+                    <ul class="rodape-nav-list">
+                        <li><a href="#">O Curso</a></li>
+                        <li><a href="modulos.html">Módulos</a></li>
+                        <li><a href="professor.html">Professor</a></li>
+                        <li><a href="inscricao.html">Inscrição</a></li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                    </ul>
+                </div>
+                <div class="rodape-column">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><img src="assets/img/github-65.svg" alt="GitHub logo" class="icons-pequeno invert"></a>
+                        <a href="#"><img src="assets/img/linkedin-svgrepo-com.svg" alt="Linkedin logo" class="icons-pequeno invert"></a>
+                        <a href="#"><img src="assets/img/instagram-white-icon.svg" alt="Instagram Logo" class="icons-pequeno"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rodape-final">
+                <p>&copy; 2024 Front Dev. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

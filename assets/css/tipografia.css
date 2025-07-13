@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #1e293b;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1e293b;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+p, a, li, span, button, input {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1e293b;
+}
+
+.subtitulo-leve {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #1e293b;
+}
+
+.texto-destaque-italico {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #1e293b;
+}/*# sourceMappingURL=tipografia.css.map */

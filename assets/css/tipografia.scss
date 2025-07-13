@@ -1,0 +1,49 @@
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Inter', sans-serif;
+
+$text-color: #1e293b;
+
+@mixin apply-font($family, $weight: 400, $style: normal) {
+  font-family: $family;
+  font-weight: $weight;
+  font-style: $style;
+  color: $text-color;
+}
+
+@mixin tamanho-fonte($size) {
+  @if $size == 'pequeno' {
+    font-size: 0.875rem; // 14px
+  } @else if $size == 'medio' {
+    font-size: 1rem; // 16px
+  } @else if $size == 'grande' {
+    font-size: 1.25rem; // 20px
+  } @else if $size == 'gigante' {
+    font-size: 2.5rem; // 40px
+  } @else {
+    font-size: 1rem; // Default to medium size
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  // Usa o mixin com a fonte 'Poppins' e peso '700' (Bold)
+  @include apply-font($font-primary, 700);
+}
+
+body {
+  // Usa o mixin com a fonte 'Inter' e peso '400' (Regular)
+  @include apply-font($font-secondary, 400);
+
+  color: $text-color;
+  line-height: 1.6;
+}
+
+p, a, li, span, button, input {
+    @include apply-font($font-secondary);
+}
+
+.subtitulo-leve {
+    @include apply-font($font-primary, 600); // SemiBold
+}
+
+.texto-destaque-italico {
+    @include apply-font($font-secondary, 400, italic);
+}
