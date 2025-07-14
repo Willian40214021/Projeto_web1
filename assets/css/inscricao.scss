@@ -17,21 +17,18 @@
     width: 100%;
     align-items: center;
 
-    // Adaptação para telas menores (layout de coluna única)
     @media (max-width: 992px) {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 }
 
-// --- Coluna do Vídeo ---
-
 .inscricao-video-wrapper {
     text-align: left;
 
     @media (max-width: 992px) {
         text-align: center;
-        order: -1; // Move o vídeo para cima no mobile
+        order: -1;
     }
 }
 
@@ -61,7 +58,7 @@
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; // Proporção 16:9
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     border-radius: 8px;
@@ -76,8 +73,6 @@
     }
 }
 
-
-// --- Coluna do Formulário ---
 .form-card {
     background-color: #ffffff;
     padding: 2.5rem;
@@ -101,7 +96,7 @@
 }
 
 .form-group label {
-    @include apply-font($font-secondary, 600); // SemiBold
+    @include apply-font($font-secondary, 600);
     @include tamanho-fonte('pequeno');
     display: block;
     margin-bottom: 0.5rem;
