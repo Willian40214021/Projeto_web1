@@ -20,16 +20,14 @@ $text-color: #1e293b;
   } @else if $size == 'gigante' {
     font-size: 2.5rem; // 40px
   } @else {
-    font-size: 1rem; // Default to medium size
+    font-size: 1rem;
   }
 }
 h1, h2, h3, h4, h5, h6 {
-  // Usa o mixin com a fonte 'Poppins' e peso '700' (Bold)
   @include apply-font($font-primary, 700);
 }
 
 body {
-  // Usa o mixin com a fonte 'Inter' e peso '400' (Regular)
   @include apply-font($font-secondary, 400);
 
   color: $text-color;
@@ -41,7 +39,7 @@ p, a, li, span, button, input {
 }
 
 .subtitulo-leve {
-    @include apply-font($font-primary, 600); // SemiBold
+    @include apply-font($font-primary, 600);
 }
 
 .texto-destaque-italico {
